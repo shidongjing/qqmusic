@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body,.wrapper{
+    width: 100%;
+    height: 100%;
+
+    body{
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    .header{
+        width: 100%;
+        height:318px;
+        border-top: 1px solid #ccc;
+        img{
+            margin: 34px auto;
+            display: block;
+            width: 190px;
+            height: 190px;
+            border: 30px solid #000;
+            border-radius: 50%;
+        }
+    }
+    article{
+        .music-name{
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+    .progress-bar{
+        margin-top: 56px;
+        display: flex;
+        align-items: center;
+        span:first-of-type{
+            float: left;
+            height: 22px;
+            padding: 5px;
+            flex-basis:40px;
+        } 
+        .line-wap{
+            flex: 1;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            span.line-out{
+                display: flex;
+                background: #ccc;
+                height: 1px;
+                padding: 0;
+                flex-basis:96%;
+                .line-insert{
+                    height: 1px;
+                    flex: 1;
+                    padding: 0;
+                    background: #000;
+                    transform: translateX(-100%);
+                    position: relative;
+                    span.dot{
+                        position: absolute;
+                        right: -10px;
+                        top: -5px;
+                        width: 10px;
+                        display: inline-block;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: #fff;
+                        padding: 0;
+                    }
+                }
+            }   
+        }
+        span:last-of-type{
+            flex-basis:38px;
+            width: 40px;
+            height: 22px;
+            padding: 5px;
+            // background: transparent;
+            // box-sizing: border-box;
+            // display: flex;
+            // justify-content:flex-end;
+            text-align: end;
+        }
+    }
+    footer{
+        height: 68px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #ccc;
+        ul:nth-of-type(1){
+            height: 100%;
+            width: 100%;
+            display: flex;
+            li{
+                flex: 1;
+                // &:nth-of-type(1){
+                //     background:url('../../images/icon-like-solid.png') no-repeat;
+                //     background-size: 20px;
+                //     background-position: center center;
+                // }
+                &.icon-like{
+                    background:url('../../images/icon-like.png') no-repeat;
+                    background-size: 20px;
+                    background-position: center center;
+                    &.icon-like-solid{
+                        background:url('../../images/icon-like-solid.png') no-repeat;
+                        background-size: 20px;
+                        background-position: center center;
+                    }
+                }
+                &:nth-of-type(2){
+                    background:url('../../images/icon-prev.png') no-repeat;
+                    background-size: 20px;
+                    background-position: center center;
+                }
+                &:nth-of-type(3){
+                    background:url('../../images/icon-play.png') no-repeat;
+                    background-size: 20px;
+                    background-position: center center;
+                    &.icon-pause{
+                        background:url('../../images/icon-pause.png') no-repeat;
+                        background-size: 20px;
+                        background-position: center center;
+                    }
+                }
+                
+                &:nth-of-type(4){
+                    background:url('../../images/icon-next.png') no-repeat;
+                    background-size: 20px;
+                    background-position: center center;
+                }
+                &:nth-of-type(5){
+                    background:url('../../images/icon-list.png') no-repeat;
+                    background-size: 20px;
+                    background-position: center center;
+                    .play-list{
+                        position:absolute;
+                        right:0px;
+                        bottom:0px;
+                        width:100%;
+                        height:380px;
+                        border:1px solid red;
+                        background:#fff;
+                        opacity:0.7;
+                        box-sizing:border-box;
+                        display: none;
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            padding-top: 20px;
+                            background: #ccc;
+                            li{
+                                flex: 0;
+                                padding: 5px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        // .micList{
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 0;
+        //     width: 50%;
+        //     height: 300px;
+        //     border: 1px solid #000;
+        // }
+    }
+
+}
+
